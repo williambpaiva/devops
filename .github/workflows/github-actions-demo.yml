@@ -6,7 +6,7 @@ on:
     pull_request:
         branches: [ "main" ]
 
-        workflow_dispatch:
+    workflow_dispatch:
 
 jobs:
     build-job:
@@ -26,4 +26,3 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - run: echo "FIM"
-
